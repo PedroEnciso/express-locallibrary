@@ -15,4 +15,4 @@ BookSchema.virtual("url").get(function () {
   return "/catalog/book/" + this._id;
 });
 
-module.exporets = mongoose.model("Book", BookSchema);
+module.exports = mongoose.model("Book", BookSchema);
