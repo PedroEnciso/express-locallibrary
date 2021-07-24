@@ -68,10 +68,10 @@ exports.book_detail = function (req, res) {
         return next(err);
       }
       // successful so render
-      es.render("book_detail", {
+      res.render("book_detail", {
         title: results.book.title,
         book: results.book,
-        book_instances: results.book_instances,
+        book_instances: results.book_instance,
       });
     }
   );
