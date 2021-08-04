@@ -104,7 +104,7 @@ exports.author_create_post = [
       author.save(function (err) {
         if (err) return next(err);
         // successful - redirect to new author record
-        rtes.redirect(author.url);
+        res.redirect(author.url);
       });
     }
   },
